@@ -27,6 +27,7 @@ namespace SIT313GroupProject2.Droid
 		public static void UpdateIdValues()
 		{
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::SIT313GroupProject2.Droid.Resource.Attribute.actionBarSize;
+			global::Splat.Resource.String.library_name = global::SIT313GroupProject2.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Animation
@@ -2156,52 +2157,76 @@ namespace SIT313GroupProject2.Droid
 			public const int icon = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int mr_dialog_material_background_dark = 2130837650;
+			public const int LocPic_0 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int mr_dialog_material_background_light = 2130837651;
+			public const int LocPic_1 = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int mr_ic_audiotrack_light = 2130837652;
+			public const int LocPic_2 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int mr_ic_cast_dark = 2130837653;
+			public const int LocPic_3 = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int mr_ic_cast_light = 2130837654;
+			public const int mr_dialog_material_background_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int mr_ic_close_dark = 2130837655;
+			public const int mr_dialog_material_background_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int mr_ic_close_light = 2130837656;
+			public const int mr_ic_audiotrack_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837657;
+			public const int mr_ic_cast_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int mr_ic_media_route_connecting_mono_light = 2130837658;
+			public const int mr_ic_cast_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int mr_ic_media_route_mono_dark = 2130837659;
+			public const int mr_ic_close_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int mr_ic_media_route_mono_light = 2130837660;
+			public const int mr_ic_close_light = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int mr_ic_pause_dark = 2130837661;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int mr_ic_pause_light = 2130837662;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int mr_ic_play_dark = 2130837663;
+			public const int mr_ic_media_route_mono_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int mr_ic_play_light = 2130837664;
+			public const int mr_ic_media_route_mono_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int notification_template_icon_bg = 2130837665;
+			public const int mr_ic_pause_dark = 2130837665;
+			
+			// aapt resource value: 0x7f0200a2
+			public const int mr_ic_pause_light = 2130837666;
+			
+			// aapt resource value: 0x7f0200a3
+			public const int mr_ic_play_dark = 2130837667;
+			
+			// aapt resource value: 0x7f0200a4
+			public const int mr_ic_play_light = 2130837668;
+			
+			// aapt resource value: 0x7f0200a9
+			public const int notification_template_icon_bg = 2130837673;
+			
+			// aapt resource value: 0x7f0200a5
+			public const int Pic_0 = 2130837669;
+			
+			// aapt resource value: 0x7f0200a6
+			public const int Pic_1 = 2130837670;
+			
+			// aapt resource value: 0x7f0200a7
+			public const int Pic_2 = 2130837671;
+			
+			// aapt resource value: 0x7f0200a8
+			public const int Pic_3 = 2130837672;
 			
 			static Drawable()
 			{
@@ -3002,6 +3027,9 @@ namespace SIT313GroupProject2.Droid
 			
 			// aapt resource value: 0x7f060011
 			public const int character_counter_pattern = 2131099665;
+			
+			// aapt resource value: 0x7f060026
+			public const int library_name = 2131099686;
 			
 			// aapt resource value: 0x7f060000
 			public const int mr_button_content_description = 2131099648;

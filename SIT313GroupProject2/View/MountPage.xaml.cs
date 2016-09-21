@@ -19,7 +19,7 @@ namespace SIT313GroupProject2
 
 		async void NavigateToList(object sender, EventArgs args)
 		{
-			await Navigation.PushModalAsync(new SIT313GroupProject2Page());
+			await Navigation.PushModalAsync(new MountList());
 		}
 
 		async void NavigateToHome(object sender, EventArgs args)

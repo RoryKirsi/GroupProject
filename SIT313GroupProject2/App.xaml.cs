@@ -1,14 +1,16 @@
-﻿using Xamarin.Forms;
+﻿using Akavache;
+using Xamarin.Forms;
 
 namespace SIT313GroupProject2
 {
 	public partial class App : Application
 	{
+		SIT313GroupProject2Page home = new SIT313GroupProject2Page();
 		public App()
 		{
 			InitializeComponent();
-
-			MainPage = new SIT313GroupProject2Page();
+			BlobCache.ApplicationName = "SIT313GroupProject2";
+			MainPage = new NavigationPage(home);
 		}
 
 		protected override void OnStart()

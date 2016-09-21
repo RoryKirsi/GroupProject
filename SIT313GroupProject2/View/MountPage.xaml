@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SIT313GroupProject2.MountPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SIT313GroupProject2.MountPage" 
+		xmlns:local="clr-namespace:SIT313GroupProject2;assembly=SIT313GroupProject2" Padding="0,20,0,0">
 	<ContentPage.Content>
 		<Grid>
     <Grid.RowDefinitions>
@@ -13,21 +14,20 @@
         <ColumnDefinition Width="*" />
 		<ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-	<Label Text="Mount picture"
-           Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Aqua"
-				VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+	
+	<Image Source="{Binding SessionPicture}"
+           Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-    <Label Text="Mount Story"
+    <Label Text="{Binding SessionDescription}"
              Grid.Row="0" Grid.Column="2" BackgroundColor="Aqua"
 				VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
-    <Label Text="Mount Get Strategy"
+    <Label Text="{Binding SessionStrategy}"
              Grid.Row="1" Grid.Column="0" BackgroundColor="Aqua"
 				VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
-    <Label Text="Location Screenshot"
-           Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="Aqua"
-				VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+    <Image Source="{Binding SessionLocation}"
+           Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
 	<Button Text="Return" Grid.Row="2" Grid.Column="0" Clicked="NavigateToList"/>
 	<Button Text="Feedback" Grid.Row="2" Grid.Column="1" Clicked="NavigateToFeedback"/>
 	<Button Text="Home" Grid.Row="2" Grid.Column="2" Clicked="NavigateToHome"/>
