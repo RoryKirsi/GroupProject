@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SIT313GroupProject2.AdviseList" 
+		xmlns:local="clr-namespace:SIT313GroupProject2;assembly=SIT313GroupProject2">
+		<ContentPage.Padding>
+	0,20,0,0
+	</ContentPage.Padding>
+
+	<ContentPage.Content>
+		<StackLayout>
+				<StackLayout.BindingContext>
+					<local:AdviseViewModel />
+				</StackLayout.BindingContext>
+			<ListView x:Name="myList" ItemsSource="{Binding AdviseList}" IsRefreshing="{Binding DataLoaded}" ItemSelected="OnAdviseSelected">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding Title}"
+								Detail="{Binding Date}" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+			</ListView>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

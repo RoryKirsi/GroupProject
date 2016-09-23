@@ -62,20 +62,21 @@ namespace SIT313GroupProject2
 
 		}*/
 
-		/*
+
 		public async Task FetchDataAsync()
 		{
 			var AppCache = new AppCache();
 			AppCache.SessionsCacheChanged +=
 				(sender, e) => { SessionsList = new ObservableCollection<Session>((List<Session>)sender); };
 			await AppCache.GetAllSessionsAsync();
-		}*/
+		}
 
-
+		/*
 		public async Task FetchDataAsync()
 		{
 			var list = await sessionsManager.FetchSessionsAsync();
 			SessionsList = new ObservableCollection<Session>(list);
-		}
+
+		}*/
 	}
 }

@@ -20,7 +20,7 @@ namespace SIT313GroupProject2
 		{
 			var cachedSessions = Cache.GetOrFetchObject<List<Session>>(
 							"AllSessions",
-				async () => await (new SessionsManager()).FetchSessionsAsync(), DateTimeOffset.Now.AddSeconds(3)
+				async () => await (new SessionsManager()).FetchSessionsAsync(), DateTimeOffset.Now.AddMinutes(30)
 			).Subscribe((List<Session> obj) =>
 
 						SessionsCacheChanged(obj,

@@ -10,7 +10,7 @@ namespace SIT313GroupProject2
 		{
 			InitializeComponent();
 			BlobCache.ApplicationName = "SIT313GroupProject2";
-			MainPage = new NavigationPage(home);
+			MainPage = home;
 		}
 
 		protected override void OnStart()

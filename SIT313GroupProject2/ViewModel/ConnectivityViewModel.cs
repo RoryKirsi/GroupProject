@@ -9,6 +9,14 @@ namespace SIT313GroupProject2
 	{
 		string _connectionStatus = "";
 
+		bool _ConnectedBool;
+
+		public bool ConnectedBool
+		{
+			get { return _ConnectedBool; }
+			set { _ConnectedBool = value; }
+		}
+
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		public string ConnectionStatus
@@ -46,10 +54,12 @@ namespace SIT313GroupProject2
 					str += type.ToString() + " ";
 				ConnectionStatus = string.Format("Connected to {0}",
 												 str);
+				ConnectedBool = true;
 			}
 			else
 			{
 				ConnectionStatus = "Not Connected!";
+				ConnectedBool = false;
 			}
 		}
 	}

@@ -1,14 +1,17 @@
 ﻿using System;
-using System.IO;
 using SQLite;
 using Xamarin.Forms;
-using SIT313GroupProject2.iOS;
+using SIT313GroupProject2.Droid;
+using System.IO;
 
 [assembly: Dependency(typeof(DBConnection))]
-namespace SIT313GroupProject2.iOS
+namespace SIT313GroupProject2.Droid
 {
 	public class DBConnection : IDBConnection
 	{
+		public DBConnection()
+		{
+		}
 
 		SQLiteAsyncConnection IDBConnection.GetSQLiteAsyncConnection()
 		{

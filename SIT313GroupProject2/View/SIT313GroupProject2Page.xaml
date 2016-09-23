@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SIT313GroupProject2" x:Class="SIT313GroupProject2.SIT313GroupProject2Page">
-		<StackLayout Padding="0,20,0,0" Spacing="150" VerticalOptions="FillAndExpand">
-			<Label Text="WoW Mount Assistance" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="White" FontSize="Large" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SIT313GroupProject2" x:Class="SIT313GroupProject2.SIT313GroupProject2Page" >
+	<Grid Padding="0,20,0,0">
+    <Image Source="bg.jpg" Aspect="AspectFill" />
+	<StackLayout  Spacing="150" >
+			<Label Text="WoW Mount Assistance" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center" TextColor="White" FontSize="Large" FontAttributes="Bold" />
 			<Button Text="Mount List" TextColor="Aqua" FontSize="Large" BackgroundColor="Yellow" 
 				HorizontalOptions="FillAndExpand" VerticalOptions="Center" Clicked="NavigateToList" />
 			<Button Text="Feedback" TextColor="Aqua" FontSize="Large" BackgroundColor="Yellow" 
 				HorizontalOptions="FillAndExpand" VerticalOptions="Center" Clicked="NavigateToFeedback" />
-		</StackLayout>
+	</StackLayout>
+    </Grid>
 </ContentPage>

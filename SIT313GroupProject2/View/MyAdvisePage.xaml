@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SIT313GroupProject2.Advise">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SIT313GroupProject2.MyAdvisePage" 
+		xmlns:local="clr-namespace:SIT313GroupProject2;assembly=SIT313GroupProject2">
 	<ContentPage.Content>
 			<StackLayout Padding="0,50,0,0" Spacing="20" VerticalOptions="FillAndExpand">
 			<StackLayout Orientation="Horizontal" Spacing="20">
 				<Label Text="Title:" />
-				<Entry x:Name="title" HorizontalOptions="FillAndExpand" />
+				<Label Text="{Binding Title}" HorizontalOptions="FillAndExpand" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="20">
 				<Label Text="Name:" />
-				<Entry x:Name="name" HorizontalOptions="FillAndExpand" />
+				<Label Text="{Binding Name}" HorizontalOptions="FillAndExpand" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="20">
-				<Label Text="Email:"/>
-				<Entry x:Name="email" HorizontalOptions="FillAndExpand" Keyboard="Email"/>
+				<Label Text="Email:" />
+				<Label Text="{Binding Email}" HorizontalOptions="FillAndExpand" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="20">
 				<Label Text="Phone:" />
-				<Entry x:Name="phone" HorizontalOptions="FillAndExpand" Keyboard="Telephone"/>
+				<Label Text="{Binding Phone}" HorizontalOptions="FillAndExpand" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="20">
 				<Label Text="Score(1-100):" />
-				<Slider x:Name="score" HorizontalOptions="FillAndExpand" Maximum="100" Minimum="0"/>
+				<Label Text="{Binding Score}" HorizontalOptions="FillAndExpand" />
 			</StackLayout>
 			<StackLayout Orientation="Vertical" Spacing="20">
 				<Label Text="Advise:" />
-				<Editor x:Name="advise" HorizontalOptions="FillAndExpand" BackgroundColor="Silver"
+				<Label Text="{Binding Advise}" HorizontalOptions="FillAndExpand" BackgroundColor="Silver"
 						TextColor="White" HeightRequest="100"/>
 			</StackLayout>
 			<Grid VerticalOptions="CenterAndExpand">
@@ -38,8 +39,6 @@
 				</Grid.ColumnDefinitions>
 				<Button Text="MyAdvise" BackgroundColor="Olive" TextColor="White"
 						Grid.Row="0" Grid.Column="0" Clicked="NavigateToMyAdvise"/>
-				<Button Text="Submit" BackgroundColor="Olive" TextColor="White"
-						Grid.Row="0" Grid.Column="1" Clicked="Submit"/>
 				<Button Text="Return" BackgroundColor="Olive" TextColor="White"
 						Grid.Row="0" Grid.Column="2" Clicked="NavigateToHome"/>
 			</Grid>
